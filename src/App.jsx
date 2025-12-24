@@ -1,9 +1,9 @@
-
-import logo from './logo.svg';
 import './App.css';
 //import img1 from '../src/images/Laptop02.jfif';
-import Home  from './Components/Fundamentals/Home';
+import Home  from '../src/Components/Fundamentals/Home.jsx';
 import img1 from '../src/assets/images/Laptop02.jfif';
+
+import ClassLifeCycle from './Components/LifeCycle/LifeCycleClass';
 
 import React from 'react';
 //import { Routes, Route } from 'react-router-dom'; // Importing Routes and Route for defining routes
@@ -13,8 +13,13 @@ import React from 'react';
 
 function App() {
     return (
-    <div className="App">
-      {/* <Routes>
+      <>
+      <Home />
+     <ClassLifeCycle /> 
+    </>
+ );
+    {/*<div className="App">
+      <Routes>
           <Route path="/" element={<div><h2>Home Page</h2><p>Welcome to the home page!</p></div>} /> 
             <Route path="/" element={<Home />} />  Default route
             <img src={img1} alt="Laptop" width="100px"/>
@@ -22,10 +27,11 @@ function App() {
             <Route path="/about" element={<div><h2>About Page</h2><p>This is the about page.</p></div>} />
             <Route path="/contact" element={<div><h2>Contact Page</h2><p>This is the contact page.</p></div>} />
             
-      </Routes> */}
+      </Routes> 
+      
    
-      {/* Basic Conceptsin ReactJS */}
-      <div className="Container">
+       Basic Conceptsin ReactJS */}
+      {/* <div className="Container">
         <h4>Welcome to React Training!</h4>
         <img src={img1} alt="Laptop" width="100px"/>
         <p>In this training, you will learn the following concepts:</p>
@@ -43,9 +49,9 @@ function App() {
       <hr/>
       <React.Fragment>
             <p>In this training, you will learn the following concepts:</p>
-            <table border="1" cellPadding="5" style={{ color: 'black', backgroundColor: 'white' }}>
+            <table border="1" cellPadding="5" style={{ color: 'black', backgroundColor: 'white' }}> */}
               {/* Remove the style in <table> and check inspect in Browser to see the default styling */}
-              <thead>
+              {/* <thead>
                 <tr>
                   <th>Concept</th>
                   <th>Description</th>
@@ -76,10 +82,9 @@ function App() {
             </table>  
           </React.Fragment>
       </div>
+    </div> 
 
-
-    </div>     
-    );
+    ); */}
 
   
 }

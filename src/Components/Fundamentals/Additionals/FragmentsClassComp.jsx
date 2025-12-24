@@ -1,6 +1,6 @@
 import React from "react";
 
-class ClassCompFragments extends React.Component
+class FragmentsClassComp extends React.Component
 {
   render(){ 
     return (
@@ -19,7 +19,8 @@ class ChildComp1 extends React.Component{
     return(
     <>
       <h3> Child Class Component1 </h3>
-     </> )
+     </> 
+     )
   }
 } 
 
@@ -28,9 +29,10 @@ class ChildComp2 extends React.Component{
     return(
     <React.Fragment>
       <h3> Child Class Component2 </h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti ab distinctio magni aliquam aperiam sunt libero voluptatum iure, expedita exercitationem placeat ipsam hic molestiae? Iusto corporis qui facere voluptas quis?</p>
      </React.Fragment>
     );
   }
 } 
 
-export default ClassCompFragments;
+export default FragmentsClassComp;

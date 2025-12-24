@@ -1,11 +1,10 @@
 import React from "react";
 import { Navbar, Container, Card, Button } from "react-bootstrap";
-import '../../Style/Home.css';
-import myImage from '../../../src/assets/images/Laptop02.jfif';
+import '../../../Style/BootstrapExample.css'; // External CSS file (.box className)
+import myImage from '../../../assets/images/angular.png';
 //import myImage from "../Assets/workplace_img1.jpg"
-import "../../Style/BootstrapExample.css" // External CSS file (.box className)
 //import styles from "../App.module.css"; // Module type CSS file to eleminate name conflict (.box) with external CSS file
-import styles from '../../App.module.css'; // Module type CSS file to eleminate name conflict (.box) with external CSS file
+import styles from '../../../App.module.css'; // Module type CSS file to eleminate name conflict (.box) with external CSS file
 
 function BootstrapExample(){
   //InLine styles

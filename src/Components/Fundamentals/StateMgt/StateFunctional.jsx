@@ -1,4 +1,4 @@
-import React, {Component, useState } from 'react';
+import React, { useState } from 'react';
 
 export default function StateFunctional() {
     // Step 1. Initialize/Create state property using useState hook

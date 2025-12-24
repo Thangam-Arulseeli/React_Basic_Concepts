@@ -21,14 +21,15 @@ export function SpreadSyntax(){
   };
   //The spread operator is very useful when you want to make an exact
   //copy of an existing array, you can use the spread operator to accomplish this quickly.
-  const formattegImage = {
+  const formattedImage = {
     ...originalImage,
     height: 100,
-    width: 100
+    width: 100,
+    alt: "Spread Operator Image"
   };
   return (
       <div style={{marginTop:10}}>
-        <Image {...formattegImage} />
+        <Image {...formattedImage} />
       </div>
   );
 }

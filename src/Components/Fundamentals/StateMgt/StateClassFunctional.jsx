@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 
 // State Management in Class Component
 
-export default class StateClass extends Component{
+export default class StateClassFunctional extends Component{
     constructor(){
         super(); // Calls parent class Component
         // Step 1. Initialize/Create state property 
