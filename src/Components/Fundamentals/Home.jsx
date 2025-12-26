@@ -68,7 +68,6 @@ function Home() {
 
             {/* Class Components and Functional with Props */}
             <ClassCompProps name="Aditya" place="India"></ClassCompProps>
-            <ClassCompProps />
             <hr></hr>
            
             <hr></hr>

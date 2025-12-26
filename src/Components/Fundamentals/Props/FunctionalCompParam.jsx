@@ -1,6 +1,6 @@
 import React from "react";
 
-function FunctionalCompParam(parameter){  // parameter is used instead of props, props/parameter is just a name
+function FunctionalCompParam(parameter){  // parameter is used instead of props, props/parameter is just a name in functional components
  // props here is an object containing all the props passed to the component.
   const name="Ruban";
   return (

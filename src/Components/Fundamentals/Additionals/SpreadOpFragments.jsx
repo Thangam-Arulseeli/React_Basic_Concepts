@@ -49,6 +49,7 @@ class Table extends React.Component{
       <table
         className="table"
         style={{
+          border: "2px solid black",
           color: "blue",
           marginTop: 10,
           marginLeft: 100,
@@ -69,11 +70,11 @@ class Table extends React.Component{
 class Columns extends React.Component{
   render(){
     return(
-      <React.Fragment>
-        <th> ID </th>
+      <> 
+       <th> ID </th>
         <th> NAME </th>
         <th> COUNTRY </th>
-      </React.Fragment>
+      </>
     );
   }
 }
