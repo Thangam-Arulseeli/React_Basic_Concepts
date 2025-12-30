@@ -1,36 +1,44 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom'; // Importing Routes and Route for defining routes
+// Importing Components for different routes
+// Routes can be defined here or in a separate file and imported
+// Routes help in navigating between different components/pages without reloading the page
+
 import './App.css';
 //import img1 from '../src/images/Laptop02.jfif';
 import Home  from '../src/Components/Fundamentals/Home.jsx';
 import img1 from '../src/assets/images/Laptop02.jfif';
 
-import ClassLifeCycle from './Components/LifeCycle/LifeCycleClass';
-
-import React from 'react';
-//import { Routes, Route } from 'react-router-dom'; // Importing Routes and Route for defining routes
-// Importing Components for different routes
-// Routes can be defined here or in a separate file and imported
-// Routes help in navigating between different components/pages without reloading the page
+import Gallery from '../src/Components/Miscellaneous/Gallery.jsx'
+import UseEffectExample from './Components/Hooks/UseEffectExample.jsx';
+import LifeCycleClass from './Components/LifeCycle/LifeCycleClass.jsx';
+import LifeCycleDemo from './Components/LifeCycle/LifeCycleDemo.jsx';
+import RenderProps from './Components/Miscellaneous/RenderProps.jsx';
+//import Nav from '../src/Components/Navbar.jsx';
 
 function App() {
+  let a = 500;
+  let b = 30;
     return (
-      <>
-      <Home />
-     <ClassLifeCycle /> 
-    </>
- );
-    {/*<div className="App">
+    <div>
       <Routes>
-          <Route path="/" element={<div><h2>Home Page</h2><p>Welcome to the home page!</p></div>} /> 
-            <Route path="/" element={<Home />} />  Default route
-            <img src={img1} alt="Laptop" width="100px"/>
-               Define more routes as needed 
-            <Route path="/about" element={<div><h2>About Page</h2><p>This is the about page.</p></div>} />
-            <Route path="/contact" element={<div><h2>Contact Page</h2><p>This is the contact page.</p></div>} />
-            
-      </Routes> 
-      
-   
-       Basic Conceptsin ReactJS */}
+        <Route path="/" element={<Home />} />
+        <Route path="/lifecycleclass" element={<LifeCycleClass />} />
+        <Route path="/lifecycledemo" element={<LifeCycleDemo />} />
+        <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/useeffect" element={<UseEffectExample />} />
+        <Route path="/renderprops" element={<RenderProps />} />
+        <Route path="/sample" element={"<h4>Sample page</h4><h5>Example Page</h5>"} />
+        {/* <Route path="/navbar" element={<Nav />} />  */}
+      </Routes>
+        {a*10 + b*20 }
+        {a>1000 ? "A is large" : "A is small"}
+        {a>100  && <h4>Both conditions are true</h4>}
+    </div>
+    );
+  
+
+      {/* Basic Conceptsin ReactJS */}
       {/* <div className="Container">
         <h4>Welcome to React Training!</h4>
         <img src={img1} alt="Laptop" width="100px"/>
@@ -86,7 +94,6 @@ function App() {
 
     ); */}
 
-  
 }
 
 export default App;

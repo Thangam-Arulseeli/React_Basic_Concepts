@@ -54,9 +54,10 @@ function Home() {
             <ClassComp />
             <hr></hr> */}
 
+
             {/* Class Components and Functional with Fragments */}
             <h4>Class & Functional Components with Fragments</h4>
-            <FragmentsClassComp />
+            {/* <FragmentsClassComp />
             <hr />
              <FunctionalCompFragments />
              <FragmentWithKey />
@@ -64,24 +65,30 @@ function Home() {
              <FragmentWithKeyInTable />
              <hr></hr>  
              <InlineStyles />
-            <hr></hr>
+            <hr></hr> */}
 
             {/* Class Components and Functional with Props */}
-            <ClassCompProps name="Aditya" place="India"></ClassCompProps>
-            <hr></hr>
-           
+            {/* <ClassCompProps name="Aditya" place="India"></ClassCompProps>
             <hr></hr>
             <FunctionalCompProp name="Arul Seeli" place="USA"></FunctionalCompProp>
             <hr></hr>
-             <FunctionalCompParam name="Moses" country="Australia" />
+             <FunctionalCompParam name="Moses" country="Australia" /> */}
 
             {/* Destructuring Examples*/}
-            <Destructuring/>
+            {/* <Destructuring/>
             <hr></hr>
             <SpreadOpFragments />
+            <BootstrapExample />   */}
 
-            <BootstrapExample />  
-
+            {/* Life Cycle Components */}
+            <h4>Life Cycle Components - Using Class Component</h4>
+            <MyClassHome />
+            <hr></hr>
+            <StateClass />  
+            <hr></hr>
+            {/* <LifeCycleClass></LifeCycleClass> */}
+            {/* <LifeCycleDemo></LifeCycleDemo> */}
+            
             {/* <ClassComp1></ClassComp1>
         
         <FunctionalComp1></FunctionalComp1>
