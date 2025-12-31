@@ -50,7 +50,7 @@
 import React, { useState, useCallback } from 'react'
 import Title from './CallbackTitle';
 import Button from './CallbackButton';
-import Textbox from './CallbackTextBox';
+import Textbox from './CallbackTextbox';
 
 function Callback() {
     const [count, setCount] = useState(0) //Button

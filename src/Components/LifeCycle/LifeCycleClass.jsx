@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 class LifeCycleClass extends Component {
-  constructor(props) {
-    super(props);
+  constructor(props) { // Receives the props when LifeCycleClass is rendered
+    super(props);  // Calls the super class constructor which is Clomponent here and passes 'props' there
     this.state = {
       count: 0
     };
@@ -87,3 +87,74 @@ class UnmountingDemo extends Component {
 
 export default LifeCycleClass;
 export { UpdateDemo, UnmountingDemo };
+
+/*
+/// Mounting Phase
+This component demonstrates the lifecycle methods of a class component in React.
+It includes constructor, getDerivedStateFromProps, componentDidMount, and render.
+The component initializes a count state and provides a button to increment the count.
+The console logs show the order of lifecycle method invocations.
+-------------------------
+Order of Execution:
+constructor
+↓
+static getDerivedStateFromProps
+↓
+render
+↓
+componentDidMount
+-------------------------
+
+Purpose of Each
+---------------
+Method	                  Purpose
+constructor	              Initialize state, bind methods
+getDerivedStateFromProps	Sync props to state
+render	                  Returns JSX
+componentDidMount	        API calls, DOM access
+
+*/
+
+/*/ Updating Lifecycle Example
+*
+Order of Execution:
+--------------------
+static getDerivedStateFromProps
+↓
+shouldComponentUpdate
+↓
+render
+↓
+getSnapshotBeforeUpdate
+↓
+componentDidUpdate
+
+
+Purpose of Each
+---------------
+Method	                  Purpose
+shouldComponentUpdate	    Performance optimization
+getSnapshotBeforeUpdate	  Capture DOM info
+componentDidUpdate	      Act after update
+
+*/
+
+/*// UNMOUNTING PHASE
+/*
+//UNMOUNTING PHASE
+Only One Method:
+
+componentWillUnmount()
+
+Purpose
+•	Cleanup timers
+•	Remove event listeners
+•	Cancel API subscriptions
+Order of Execution:
+--------------------
+componentWillUnmount  
+--------------------
+
+*/
+
+

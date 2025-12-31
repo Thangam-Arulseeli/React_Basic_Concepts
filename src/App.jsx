@@ -14,6 +14,12 @@ import UseEffectExample from './Components/Hooks/UseEffectExample.jsx';
 import LifeCycleClass from './Components/LifeCycle/LifeCycleClass.jsx';
 import LifeCycleDemo from './Components/LifeCycle/LifeCycleDemo.jsx';
 import RenderProps from './Components/Miscellaneous/RenderProps.jsx';
+import Callback from './Components/Hooks/Callback.jsx';
+import Sort from './Components/Miscellaneous/Sort.jsx';
+import RenderPropsMainDemo from './Components/Miscellaneous/RenderPropsMainDemo.jsx';
+import RenderPropsClassMain from './Components/Miscellaneous/RenderPropsClassMain.jsx';
+import LifeCycleFunction from './Components/LifeCycle/LifeCycleFunction.jsx';
+
 //import Nav from '../src/Components/Navbar.jsx';
 
 function App() {
@@ -21,15 +27,24 @@ function App() {
   let b = 30;
     return (
     <div>
-      <Routes>
+       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/lifecycleclass" element={<LifeCycleClass />} />
+         <Route path="/lifecyclefunction" element={<LifeCycleFunction />} />
         <Route path="/lifecycledemo" element={<LifeCycleDemo />} />
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/useeffect" element={<UseEffectExample />} />
         <Route path="/renderprops" element={<RenderProps />} />
-        <Route path="/sample" element={"<h4>Sample page</h4><h5>Example Page</h5>"} />
-        {/* <Route path="/navbar" element={<Nav />} />  */}
+        <Route path="/callback" element={<Callback />} />
+        <Route path="/sort" element={<Sort />} />
+        <Route path="/renderpropsmain" element={<RenderPropsMainDemo />} />
+        <Route path="/renderpropsclass" element={<RenderPropsClassMain />} />
+        
+       
+
+
+        <Route path="/sample" element={<><h4>Sample page</h4><h5>Example Page</h5></>} /> 
+        {/* <Route path="/navbar" element={<Nav />} />   */}
       </Routes>
         {a*10 + b*20 }
         {a>1000 ? "A is large" : "A is small"}
