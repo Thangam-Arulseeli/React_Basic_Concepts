@@ -20,6 +20,13 @@ import RenderPropsMainDemo from './Components/Miscellaneous/RenderPropsMainDemo.
 import RenderPropsClassMain from './Components/Miscellaneous/RenderPropsClassMain.jsx';
 import LifeCycleFunction from './Components/LifeCycle/LifeCycleFunction.jsx';
 
+// Form Manipulations
+import BiodataFormControlled from './Components/FormHandling/BiodataFormControlled.jsx';
+import BiodataFormUncontrolled from './Components/FormHandling/BiodataFormUncontrolled';
+import BiodataFormRHF from './Components/FormHandling/DynamicFieldsRHF.jsx';
+import BiodataFormRHFYepValid from './Components/FormHandling/BiodataFormRHFYepValid.jsx'
+import BiodataFormFormik from './Components/FormHandling/BiodataFormFormik.jsx'
+
 //import Nav from '../src/Components/Navbar.jsx';
 
 function App() {
@@ -39,6 +46,12 @@ function App() {
         <Route path="/sort" element={<Sort />} />
         <Route path="/renderpropsmain" element={<RenderPropsMainDemo />} />
         <Route path="/renderpropsclass" element={<RenderPropsClassMain />} />
+
+        <Route path="/formcontrolled" element={<BiodataFormControlled/>} />
+        <Route path="/formuncontrolled" element={<BiodataFormUncontrolled/>} />
+        <Route path="/formrhf" element={<BiodataFormRHF/>} />
+        <Route path="/formrhfyup" element={<BiodataFormRHFYepValid/>} />
+        <Route path="/formformik" element={<BiodataFormFormik/> } />
         
        
 

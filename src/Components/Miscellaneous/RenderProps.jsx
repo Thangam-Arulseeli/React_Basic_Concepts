@@ -165,6 +165,7 @@ class Mouse extends Component {
       y: event.clientY,
     });
   }
+  
 
   render() {
     return (

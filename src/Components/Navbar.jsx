@@ -96,9 +96,6 @@ export default function Navbar(){
                                 <span> Higher Order Components </span>
                             </Link>
                         </li>
-
-
-
                     </ul>
                 </div>
             </div>
