@@ -72,7 +72,11 @@ export class StateClass1 extends Component{
             <button onClick={this.increment}> Increase Count </button>
                  { this.state.count }   {/* String Interpolation */}
             <button onClick={this.decrement}> Decrease Count </button>
-          </div>   )  }   }
+          </div>   )  
+          }
+     }
+
+     
 
 
 

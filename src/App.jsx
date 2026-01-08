@@ -14,7 +14,7 @@ import UseEffectExample from './Components/Hooks/UseEffectExample.jsx';
 import LifeCycleClass from './Components/LifeCycle/LifeCycleClass.jsx';
 import LifeCycleDemo from './Components/LifeCycle/LifeCycleDemo.jsx';
 import RenderProps from './Components/Miscellaneous/RenderProps.jsx';
-import Callback from './Components/Hooks/Callback.jsx';
+
 import Sort from './Components/Miscellaneous/Sort.jsx';
 import RenderPropsMainDemo from './Components/Miscellaneous/RenderPropsMainDemo.jsx';
 import RenderPropsClassMain from './Components/Miscellaneous/RenderPropsClassMain.jsx';
@@ -26,6 +26,11 @@ import BiodataFormUncontrolled from './Components/FormHandling/BiodataFormUncont
 import BiodataFormRHF from './Components/FormHandling/DynamicFieldsRHF.jsx';
 import BiodataFormRHFYepValid from './Components/FormHandling/BiodataFormRHFYepValid.jsx'
 import BiodataFormFormik from './Components/FormHandling/BiodataFormFormik.jsx'
+
+import Callback from './Components/Hooks/Callback.jsx'
+import ReactHook from './Components/Hooks/ReactHooks.jsx'
+import UseMemoExample from './Components/Hooks/UseMemoExample';
+import ParentCallback from './Components/Hooks/CallbackParent.jsx';
 
 //import Nav from '../src/Components/Navbar.jsx';
 
@@ -42,18 +47,23 @@ function App() {
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/useeffect" element={<UseEffectExample />} />
         <Route path="/renderprops" element={<RenderProps />} />
-        <Route path="/callback" element={<Callback />} />
+        
         <Route path="/sort" element={<Sort />} />
         <Route path="/renderpropsmain" element={<RenderPropsMainDemo />} />
         <Route path="/renderpropsclass" element={<RenderPropsClassMain />} />
 
+        
         <Route path="/formcontrolled" element={<BiodataFormControlled/>} />
         <Route path="/formuncontrolled" element={<BiodataFormUncontrolled/>} />
         <Route path="/formrhf" element={<BiodataFormRHF/>} />
         <Route path="/formrhfyup" element={<BiodataFormRHFYepValid/>} />
         <Route path="/formformik" element={<BiodataFormFormik/> } />
         
-       
+        {/* Hook Examples */}
+        <Route path="/callback" element={<Callback/>} />
+        <Route path="/callbackparent" element={<ParentCallback />} />
+        <Route path="/reacthook" element={<ReactHook/>} />
+        <Route path="/usememo" element={<UseMemoExample />} />
 
 
         <Route path="/sample" element={<><h4>Sample page</h4><h5>Example Page</h5></>} /> 

@@ -11,7 +11,7 @@
 // import React, { useState } from 'react';  
 // import Title from './CallbackTitle';  
 // import Button from './CallbackButton'; 
-// import Textbox from './CallbackTextBox'; 
+// import Textbox from './CallbackTextbox'; 
 
 // function Callback() {  
 
@@ -40,12 +40,17 @@
 
 // export default Callback; 
 
-//Scenario 2 - with useCallback()
+// Scenario 2 - with useCallback()
 
-//To avoid the rerendering of components in Scenario 1, there is a need for useCallback().
-//Now, while the exporting Title,Button and TextBox component adds React.Memo() function, 
-//which will render only if there will be a change in props or state in Title,Button and TextBox components
+// To avoid the rerendering of components in Scenario 1, there is a need for useCallback().
+// Now, while the exporting Title,Button and TextBox component adds React.Memo() function, 
+// which will render only if there will be a change in props or state in Title,Button and TextBox components
 // useCallback hook memoize the function
+
+// 🔍 Syntax for useCallback
+// const memoizedFn = useCallback(() => {
+//   // function logic
+// }, [dependencies]);
 
 import React, { useState, useCallback } from 'react'
 import Title from './CallbackTitle';
@@ -56,12 +61,12 @@ function Callback() {
     const [count, setCount] = useState(0) //Button
     const [name, setName] = useState("") //TextBox
 
-   // Button Component
+   //Button Component
     const incrementCounter = useCallback(() => {
         setCount(count + 1)
     }, [count])
 
-   // TextBox
+   //TextBox
     const updateName = useCallback((e) => {
         setName(e.target.value)
     },[])
@@ -82,6 +87,8 @@ function Callback() {
 }
 
 export default Callback 
+
+//-------------------------------------------------------
 
 //useCallback() hook will return a memorized version of the 
 // callback function that will change only when dependencies have changed. 

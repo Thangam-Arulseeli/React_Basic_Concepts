@@ -12,7 +12,7 @@ export default function ReactHooks() {
     projects: 0,
   });
   function changeLanguage() {
-    setState({ ...state, language: "React 18" });
+    setState({ ...state, language: "React 19" });
   }
   function addProject() {
     setState((prev) => {
