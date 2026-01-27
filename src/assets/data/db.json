@@ -1,0 +1,49 @@
+{
+  "biodata": [
+    {
+      "id": "1",
+      "name": "Arun Kumar",
+      "age": 25,
+      "gender": "Male",
+      "email": "arun@gmail.com",
+      "phone": "9876543210",
+      "dob": "1999-05-10",
+      "qualification": "MCA",
+      "skills": [
+        "React",
+        "Node"
+      ],
+      "maritalStatus": "Single",
+      "address": "Chennai"
+    },
+    {
+      "id": "5ad9",
+      "name": "Daniel",
+      "age": 56,
+      "gender": "Female",
+      "email": "daniel@gmail.com",
+      "phone": "7897653214",
+      "qualification": "MCA",
+      "skills": [
+        "React",
+        "Python",
+        "Node"
+      ],
+      "address": "Mumbai"
+    },
+    {
+      "id": "1755",
+      "name": "Jannet Franklin ",
+      "age": 22,
+      "gender": "Male",
+      "email": "franklin@yahoo.com",
+      "phone": "7897653214",
+      "qualification": "BCA",
+      "skills": [
+        "Python",
+        "Node"
+      ],
+      "address": "Mumbai"
+    }
+  ]
+}

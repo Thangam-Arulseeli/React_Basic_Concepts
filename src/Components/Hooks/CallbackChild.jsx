@@ -1,4 +1,4 @@
-
+import React from "react";
 // Example 1 : Code Without useCallback
 ////🔴 Child Component
 const CallbackChild = React.memo(({ onIncrement }) => {

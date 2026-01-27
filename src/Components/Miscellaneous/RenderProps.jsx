@@ -37,10 +37,11 @@ class AnotherWrapper extends Component {
 class BaseComponent extends Component {
   state = {
     name: "Benedict",
+    age: 30,
   };
 
   render() {
-    return this.props.render(this.state.name);
+    return this.props.render(this.state.name, this.state.age);
   }
 }
 

@@ -1,9 +1,10 @@
 //Example 1: Problem Without useCallback
 
-import react, { useCallback } from "react";
+import React, { useCallback } from "react";
+import CallbackChild from "./CallbackChild";
 
 //🔴 Parent Component -- Without useCallback
-function ParentCallback() {
+function CallbackParent() {
   const [count, setCount] = React.useState(0);
 
   const increment = () => {
@@ -14,11 +15,11 @@ function ParentCallback() {
     <>
       <h3>Count: {count}</h3>
       <button onClick={() => setCount(count + 1)}>+</button>
-      <Child onIncrement={increment} />
+      <CallbackChild onIncrement={increment} />
     </>
   );
 }
-export default ParentCallback;
+export default CallbackParent;
 
 //Example 2: Solved Using useCallback
 
@@ -29,7 +30,7 @@ export default ParentCallback;
 // }, [dependencies]);
 
 
-// function ParentCallback() {
+// function CallbackParent() {
 //   const [count, setCount] = React.useState(0);
 
 //   const increment = React.useCallback(() => {
@@ -40,12 +41,12 @@ export default ParentCallback;
 //     <>
 //       <h3>Count: {count}</h3>
 //       <button onClick={() => setCount(count + 1)}>+</button>
-//       <Child onIncrement={increment} />
+//       <CallbackChild onIncrement={increment} />
 //     </>
 //   );
 // }
 
-// export default ParentCallback;
+// export default CallbackParent;
 //---------------------------------------------
 
 //✔ Function reference remains same (Child Component is same)

@@ -8,37 +8,38 @@
 
 //Scenario 1 - without useCallback()
 
-// import React, { useState } from 'react';  
-// import Title from './CallbackTitle';  
-// import Button from './CallbackButton'; 
-// import Textbox from './CallbackTextbox'; 
+/*import React, { useState } from 'react';  
+import Title from './CallbackTitle';  
+import Button from './CallbackButton'; 
+import Textbox from './CallbackTextbox'; 
 
-// function Callback() {  
+function Callback() {  
 
-//   const [count, setCount] = useState(0)  
-//   const [name, setName] = useState("")  
+  const [count, setCount] = useState(0)  
+  const [name, setName] = useState("")  
 
-//   const incrementCounter = () => {  
-//     setCount(count + 1)  
-//   }  
+  const incrementCounter = () => {  
+    setCount(count + 1)  
+  }  
 
-//   const updateName = (e) => {  
-//     setName(e.target.value)  
-//   }  
+  const updateName = (e) => {  
+    setName(e.target.value)  
+  }  
 
-//   return (  
-//     <div className="App" style={{marginTop:100}}>  
-//       <Title />  
+  return (  
+    <div className="App" style={{marginTop:100}}>  
+      <Title />  
 
-//       <Button count={count} handleClick={incrementCounter} />  
+      <Button count={count} handleClick={incrementCounter} />  
 
-//       <label>Name is {name}</label>  
-//       <Textbox text={name} handleClick={updateName} />  
-//     </div>  
-//   );  
-// }  
+      <label>Name is {name}</label>  
+      <Textbox text={name} handleClick={updateName} />  
+    </div>  
+  );  
+}  
 
-// export default Callback; 
+export default Callback; 
+*/
 
 // Scenario 2 - with useCallback()
 
@@ -48,6 +49,7 @@
 // useCallback hook memoize the function
 
 // 🔍 Syntax for useCallback
+// --------------------------
 // const memoizedFn = useCallback(() => {
 //   // function logic
 // }, [dependencies]);
@@ -69,7 +71,7 @@ function Callback() {
    //TextBox
     const updateName = useCallback((e) => {
         setName(e.target.value)
-    },[])
+    },[name])
 
     return (
         <div>

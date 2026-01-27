@@ -81,7 +81,7 @@ function FormExample() {
             {/* onClick={handleSubmit} */}
                 <label>
                     Name:
-                    <input type="textd" name="name" />
+                    <input type="text" name="name" />
                 </label>
                 <button type="submit" onClick={handleSubmit}>Submit</button>
             </form>

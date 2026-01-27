@@ -1,61 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { BrowserRouter } from 'react-router-dom'; // Importing BrowserRouter for routing
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
-  <>
-  {/* <React.StrictMode>
-    <App />
-  </React.StrictMode> */}
-
-  <BrowserRouter> 
+  <BrowserRouter>
     <App />
   </BrowserRouter>
-</>
-  
 );
 
-/* 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-Creates a React root using React 18’s new rendering API.
+//import { BiodataProvider } from './Components/database/ContextAPI/context/BiodataContex'  //"./components/database/ContextAPI/context/BiodataContext";
 
-** This tells React:
-    “This is where the React app will be rendered.”
-
-** Finds the HTML element with id root (usually in index.html)
-    <div id="root"></div>
-
-createRoot enables React 18 features like:
-  ** Concurrent rendering
-  ** Automatic batching
---------------------------------
+/*const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <BiodataProvider>
     <App />
-  </React.StrictMode>
+  </BiodataProvider>
 );
+)*/
 
-Renders (displays) React components inside the root DOM element.
-  ** React.StrictMode is a tool for highlighting potential problems in an application.
-     It activates additional checks and warnings for its descendants.
-  ** <App /> is the main component of the application.
-     It serves as the root component that contains all other components and logic of the app.
- 
- 
-  Overall, this code initializes and renders a React application,
-  setting up the root element and wrapping the main App component in StrictMode for better development practices. 
 
-A development-only wrapper that:
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   // <React.StrictMode>
+//  // <BiodataProvider>
+//     <App />
+  
+//   //</BiodataProvider>
+// );
 
-  ** Detects unsafe lifecycle methods
-  ** Warns about deprecated APIs
-  ** Helps identify side effects
-  ** Does not affect production builds
-*/
-
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
