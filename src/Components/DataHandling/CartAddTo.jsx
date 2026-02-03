@@ -19,7 +19,7 @@
       -All the functionalities for AddToCart task must be nested in our component using CartProvider component  
       
       -For AddToCart Implementation, we use the following components
-        Cart, CartProducts & Navbar (Cart Count is attached in Navbar)
+        Cart, CartProducts & Navbar // (Cart Count is attached in Navbar)
 
  */
   
@@ -28,7 +28,7 @@ import React from "react";
 import { CartProvider } from "react-use-cart";
 import Cart from "./Cart";
 import CartProducts from "./CartProducts";
-import Nav from "./Navbar";
+//import Nav from "./Navbar";
 
 function AddToCart() {
   return (

@@ -36,12 +36,14 @@ import HOC1 from './Components/HOC/HOCProduct.jsx'
 import HOC2 from './Components/HOC/HOCUser.jsx'; 
 import HOCTodo from './Components/HOC/HOCTodo.jsx';
 
-
 import Events from './Components/Miscellaneous/Events.jsx';
+import PropCards from './Components/Miscellaneous/PropCards.jsx';
+import ProductaPI from './Components/DataHandling/ProductAPI.jsx';
+import MapJSON from './Components/DataHandling/MapJSON.jsx';
 
+import AddToCart from './Components/DataHandling/CartAddTo.jsx';
 
-
-//import Nav from '../src/Components/Navbar.jsx';
+import Nav from './Components/NavBar.jsx';
 
 function App() {
   let a = 500;
@@ -49,7 +51,8 @@ function App() {
     return (
     <div>
        <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Nav />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/lifecycleclass" element={<LifeCycleClass />} />
          <Route path="/lifecyclefunction" element={<LifeCycleFunction />} />
         <Route path="/lifecycledemo" element={<LifeCycleDemo />} />
@@ -80,7 +83,11 @@ function App() {
 
         <Route path="/events" element={<Events />} />
         <Route path="/renderprops" element={<RenderProps />} />
+        <Route path="/propcards" element={<PropCards />} />
+        <Route path="/productapi" element={<ProductaPI />} />
+        <Route path="/mapjson" element={<MapJSON />} />
 
+        <Route path="/addtocart" element={<AddToCart />} />
 
 
         <Route path="/sample" element={<><h4>Sample page</h4><h5>Example Page</h5></>} /> 
@@ -94,7 +101,8 @@ function App() {
   
 
       {/* Basic Conceptsin ReactJS */}
-      {/* <div className="Container">
+      {/* <div className="Container">CG-vak123
+        
         <h4>Welcome to React Training!</h4>
         <img src={img1} alt="Laptop" width="100px"/>
         <p>In this training, you will learn the following concepts:</p>

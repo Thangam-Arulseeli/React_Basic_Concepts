@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../data/products.json"; // JSON file is used here
+import data from  '../../assets/data/products.json' // JSON file is used here
 import { useCart } from "react-use-cart"; // useCart Hook is used here 
 
 const CartProducts = () => {

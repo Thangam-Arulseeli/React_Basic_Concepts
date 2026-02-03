@@ -22,9 +22,11 @@ import SpreadOpFragments from "../Fundamentals/Additionals/SpreadOpFragments";
 import BootstrapExample from '../Fundamentals/Additionals/BootstrapExample';
 import FragmentWithKey, {FragmentWithKeyInTable} from "../Fundamentals/Additionals/FragmentWithKey";
 
+
 function Home() { 
     return (
         <div className="Home">
+            {/* <Nav /> */}
             {/* <h2 className="heading"> Home Component</h2>
             <p>This is the Home component of the React application.</p>
              <img src={img1} alt="Laptop" width="100px"/>
@@ -56,7 +58,7 @@ function Home() {
 
 
             {/* Class Components and Functional with Fragments */}
-            <h4>Class & Functional Components with Fragments</h4>
+            {/* <h4>Class & Functional Components with Fragments</h4> */}
             {/* <FragmentsClassComp />
             <hr />
              <FunctionalCompFragments />
@@ -81,11 +83,11 @@ function Home() {
             <BootstrapExample />   */}
 
             {/* Life Cycle Components */}
-            <h4>Life Cycle Components - Using Class Component</h4>
+            {/* <h4>Life Cycle Components - Using Class Component</h4>
             <MyClassHome />
             <hr></hr>
-            <StateClass />  
-            <hr></hr>
+            <StateClass />   */}
+            {/* <hr></hr> */}
             {/* <LifeCycleClass></LifeCycleClass> */}
             {/* <LifeCycleDemo></LifeCycleDemo> */}
             

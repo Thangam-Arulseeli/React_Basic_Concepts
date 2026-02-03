@@ -18,7 +18,7 @@ const Cart = () => {
 
   //When testing interactively, use a card number, such as 4242 4242 4242 4242.
   //Enter the card number in the Dashboard or in any payment form.
-  //se a valid future date, such as 12/34.
+  //Use a valid future date, such as 12/34.
   //Use any three-digit CVC (four digits for American Express cards).
   //function makePayment(amount) {
   function makePayment() {
@@ -114,7 +114,7 @@ const Cart = () => {
               return (
                 <tr key={index}>
                   <td>
-                    <img src={item.image} style={{ height: "6rem" }} alt="" />
+                    <img src={item.image} style={{ height: "6rem" }} alt="Image" /> {item.id}
                   </td>
                   <td>{item.title}</td>
                   <td>{item.price}</td>
