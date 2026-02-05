@@ -42,6 +42,7 @@ import ProductaPI from './Components/DataHandling/ProductAPI.jsx';
 import MapJSON from './Components/DataHandling/MapJSON.jsx';
 
 import AddToCart from './Components/DataHandling/CartAddTo.jsx';
+import Reducer from './Components/Fundamentals/StateMgt/UsageOfReducer.jsx';
 
 import Nav from './Components/NavBar.jsx';
 
@@ -51,7 +52,7 @@ function App() {
     return (
     <div>
        <Routes>
-        <Route path="/" element={<Nav />} />
+        {/* <Route path="/" element={<Nav />} /> */}
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/lifecycleclass" element={<LifeCycleClass />} />
          <Route path="/lifecyclefunction" element={<LifeCycleFunction />} />
@@ -88,6 +89,7 @@ function App() {
         <Route path="/mapjson" element={<MapJSON />} />
 
         <Route path="/addtocart" element={<AddToCart />} />
+        <Route path="/reducer" element={<Reducer />} />
 
 
         <Route path="/sample" element={<><h4>Sample page</h4><h5>Example Page</h5></>} /> 
