@@ -7,7 +7,8 @@ export default class StateClass extends Component {
         super(); // Calls parent class Component constructor
         // Step 1. Initialize/Create state property
         this.state = {
-            count: 0
+            count: 0,
+            name: "John"
         };
     }
 
@@ -20,6 +21,7 @@ export default class StateClass extends Component {
             <div className="StateClass">
                 <h2 className="heading"> StateClass Component</h2>
                 <p>Count: {this.state.count}</p>  {/* Displaying state value -- String Interpolation */}
+                <p>Name: {this.state.name}</p>
                 <button onClick={this.incrementCount}>Increment</button>
             </div>
         );

@@ -26,6 +26,7 @@ import FragmentWithKey, {FragmentWithKeyInTable} from "../Fundamentals/Additiona
 function Home() { 
     return (
         <div className="Home">
+            <h2 className="heading"> Home Component</h2>
             {/* <Nav /> */}
             {/* <h2 className="heading"> Home Component</h2>
             <p>This is the Home component of the React application.</p>

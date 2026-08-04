@@ -1,14 +1,34 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom'; // Importing Routes and Route for defining routes
+//import { Routes, Route } from 'react-router-dom'; // Importing Routes and Route for defining routes
 // Importing Components for different routes
 // Routes can be defined here or in a separate file and imported
 // Routes help in navigating between different components/pages without reloading the page
 
 import './App.css';
 //import img1 from '../src/images/Laptop02.jfif';
-import Home  from '../src/Components/Fundamentals/Home.jsx';
+//import Home  from '../src/Components/Fundamentals/Home.jsx';
 //import img1 from '../src/assets/images/Laptop02.jfif';
 
+// Fundamentals
+import ClassCompProps from './Components/Fundamentals/Props/ClassCompProps.jsx';
+//import ClassComp from './Components/Fundamentals/Additionals/FragmentsClassComp.jsx';
+import FunctionalCompProp from './Components/Fundamentals/Props/FunctionalCompProps.jsx';
+import FunctionalCompParam from './Components/Fundamentals/Props/FunctionalCompParam.jsx';
+
+import StateClass from './Components/Fundamentals/StateMgt/StateClass.jsx';
+import StateFunctional from './Components/Fundamentals/StateMgt/StateFunctional.jsx'; 
+ import StateClassFunctional from './Components/Fundamentals/StateMgt/StateClassFunctional.jsx';
+//import MultipleStateUpdate from './Components/Fundamentals/StateMgt/MultipleStateUpdate.jsx';
+
+// import Destructuring from './Components/Fundamentals/Additionals/Destructuring.jsx';
+// import FragmentsClassComp from './Components/Fundamentals/Additionals/FragmentsClassComp.jsx';
+// import FunctionalCompFragments from './Components/Fundamentals/Additionals/FragmentsFunctionalComp.jsx';
+// import InlineStyles from './Components/Fundamentals/Additionals/InlineStyles.jsx';
+// import SpreadOpFragments from './Components/Fundamentals/Additionals/SpreadOpFragments.jsx';
+// import BootstrapExample from './Components/Fundamentals/Additionals/BootstrapExample.jsx';
+// import FragmentWithKey, {FragmentWithKeyInTable} from './Components/Fundamentals/Additionals/FragmentWithKey.jsx';
+
+/*
 import Gallery from '../src/Components/Miscellaneous/Gallery.jsx'
 import UseEffectExample from './Components/Hooks/UseEffectExample.jsx';
 import LifeCycleClass from './Components/LifeCycle/LifeCycleClass.jsx';
@@ -45,15 +65,53 @@ import AddToCart from './Components/DataHandling/CartAddTo.jsx';
 import Reducer from './Components/Fundamentals/StateMgt/UsageOfReducer.jsx';
 
 import Nav from './Components/NavBar.jsx';
+*/
 
 function App() {
-  let a = 500;
+  return (
+    <div className="App">
+    <ul>
+      <a href="/">Home</a>
+      <li><a href="/classprops">Class Component Props </a>  <ClassCompProps name="Seeli" place="India"/>    </li>
+      <li><a href="/functionalprops">Functional Component Props</a> <FunctionalCompProp name="Harsha" place="Covai"/> </li>
+      <li><a href="/functionalparam">Functional Component with Parameter</a> <FunctionalCompParam name="Harshavardhan" country="India" /></li>
+      
+      <li><a href="/stateclass">State Class Component</a> <StateClass /> </li>
+      <li> <a href="/statefunctional">State Functional Component</a> <StateFunctional /> </li>
+      <li><a href="/stateclassfunctional">State Class Functional Component</a> <StateClassFunctional /> </li>
+      {/* <li> <a href="/multiplestatefunction">Multiple State Functional Component</a> <MultipleStateUpdate /> </li> */}
+    </ul>
+    </div> );
+}
+export default App;
+
+
+
+/*
+export default App;
+
+ let a = 500;
   let b = 30;
-    return (
-    <div>
-       <Routes>
-        {/* <Route path="/" element={<Nav />} /> */}
+    return (  
+
+       // <div className="App">
+  //     <Routes>
+  //       <Route path="/" element={<Home />} />
+  //       <Route path="/classprops" element={<ClassCompProps />} />
+  //       <Route path="/functionalprops" element={<FunctionalCompProp />} />
+  //       <Route path="/functionalparam" element={<FunctionalCompParam name="Harshavardhan" country="India"/>} />
+  //       <Route path="/stateclass" element={<StateClass />} />
+  //       <Route path="/statefunction" element={<StateFunction />} />
+  //     </Routes>
+  //   </div>
+      */ 
+    {/* <div>
+       <Routes> */}
+         /* <Route path="/" element={<Nav />} /> */ 
         {/* <Route path="/" element={<Home />} /> */}
+ 
+
+        /*
         <Route path="/lifecycleclass" element={<LifeCycleClass />} />
          <Route path="/lifecyclefunction" element={<LifeCycleFunction />} />
         <Route path="/lifecycledemo" element={<LifeCycleDemo />} />
@@ -71,8 +129,8 @@ function App() {
         <Route path="/formrhfyup" element={<BiodataFormRHFYepValid/>} />
         <Route path="/formformik" element={<BiodataFormFormik/> } />
         
-        {/* Hook Examples */}
-        <Route path="/callback" element={<Callback/>} />
+        {/* Hook Examples */
+    /*    <Route path="/callback" element={<Callback/>} />
         <Route path="/callbackparent" element={<ParentCallback />} />
         <Route path="/reacthook" element={<ReactHook/>} />
         <Route path="/usememo" element={<UseMemoExample />} /> 
@@ -93,13 +151,13 @@ function App() {
 
 
         <Route path="/sample" element={<><h4>Sample page</h4><h5>Example Page</h5></>} /> 
-        {/* <Route path="/navbar" element={<Nav />} />   */}
-      </Routes>
+        {/* <Route path="/navbar" element={<Nav />} />   */
+      // </Routes>
         {/* {a*10 + b*20 }
         {a>1000 ? "A is large" : "A is small"}
         {a>100  && <h4>Both conditions are true</h4>} */}
-    </div>
-    );
+    // </div>
+    // );
   
 
       {/* Basic Conceptsin ReactJS */}
@@ -124,7 +182,7 @@ function App() {
             <p>In this training, you will learn the following concepts:</p>
             <table border="1" cellPadding="5" style={{ color: 'black', backgroundColor: 'white' }}> */}
               {/* Remove the style in <table> and check inspect in Browser to see the default styling */}
-              {/* <thead>
+              /* <thead>
                 <tr>
                   <th>Concept</th>
                   <th>Description</th>
@@ -157,8 +215,4 @@ function App() {
       </div>
     </div> 
 
-    ); */}
-
-}
-
-export default App;
+    ); } */

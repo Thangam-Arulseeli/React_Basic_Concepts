@@ -8,7 +8,7 @@ export default class ClassCompProps extends React.Component{
          <h4>Parent</h4>
         <h3> Welcome to Props in Class Component ---- Welcome {this.props.name} from {this.props.place}!!!!</h3>
        
-        <ChildClassComp myClassProps="Aditya Ramanand" myAge={22}></ChildClassComp>
+        <ChildClassComp myClassProps="Harshavardhan" myAge={22}></ChildClassComp>
         <hr />
       </div>
     );
