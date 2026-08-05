@@ -85,6 +85,9 @@ export default function Profile(){
                 size={40}
                 person={({name: "Johnson", imageId: "Yfeoqp2" })}
             />
+            <CurrentUser />
+            <Message msg="Welcome Back!!!" date={new Date().toLocaleTimeString()} />
+            <Message1 msg="on" date={new Date().toLocaleDateString()} />
         </Card>
     )
 }

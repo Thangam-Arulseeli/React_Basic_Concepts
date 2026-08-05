@@ -1,20 +1,19 @@
 //🔹 Example 1: Batch update problem (❌ wrong way)
 import { useState } from "react";
 
-function Counter() {
+export default function MultipleStateUpdate() {
   const [count, setCount] = useState(0);
 
-  const incrementTwice = () => {
-    setCount(count + 1);
-    setCount(count + 1);
-  };
+  // const incrementTwice = () => {
+  //   setCount(count + 1);
+  //   setCount(count + 1);
+  // };
 
   // 🔹 Example 2: Correct way using functional update (✅)
- /* const incrementTwice = () => {
+ const incrementTwice = () => {
   setCount(prev => prev + 1);
   setCount(prev => prev + 1);
 }; 
-*/
 
   return (
     <>

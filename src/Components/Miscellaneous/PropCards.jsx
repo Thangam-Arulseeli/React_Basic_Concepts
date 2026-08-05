@@ -30,7 +30,7 @@ function Avatar({ image, size }) {
   }
   
   //Passing props from Parent Component -> Avatar Child Component
-  // Avatar component is reused many times oin CardProfile
+  // Avatar component is reused many times in CardProfile
   export default function CardProfile() {
     return (
       <div>

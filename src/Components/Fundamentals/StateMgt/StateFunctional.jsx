@@ -8,9 +8,10 @@ export default function StateFunctional() {
 
     return (
         <div className="StateFunctional">
-            <h2 className="heading"> StateFunctional Component</h2>
+            <h2 className="heading"> StateFunctional Component - Demo</h2>
             <p>Count: {count}</p>  {/* Displaying state value -- String Interpolation */}
             <button onClick={() => setCount(count + 1)}>Increment</button>
+    <StateFunctional1 /> 
         </div>
     );
 }

@@ -15,75 +15,100 @@ import ClassCompProps from './Components/Fundamentals/Props/ClassCompProps.jsx';
 import FunctionalCompProp from './Components/Fundamentals/Props/FunctionalCompProps.jsx';
 import FunctionalCompParam from './Components/Fundamentals/Props/FunctionalCompParam.jsx';
 
+//State Management
 import StateClass from './Components/Fundamentals/StateMgt/StateClass.jsx';
 import StateFunctional from './Components/Fundamentals/StateMgt/StateFunctional.jsx'; 
  import StateClassFunctional from './Components/Fundamentals/StateMgt/StateClassFunctional.jsx';
-//import MultipleStateUpdate from './Components/Fundamentals/StateMgt/MultipleStateUpdate.jsx';
+import MultipleStateUpdate from './Components/Fundamentals/StateMgt/MultipleStateUpdate.jsx';
 
-// import Destructuring from './Components/Fundamentals/Additionals/Destructuring.jsx';
-// import FragmentsClassComp from './Components/Fundamentals/Additionals/FragmentsClassComp.jsx';
-// import FunctionalCompFragments from './Components/Fundamentals/Additionals/FragmentsFunctionalComp.jsx';
-// import InlineStyles from './Components/Fundamentals/Additionals/InlineStyles.jsx';
-// import SpreadOpFragments from './Components/Fundamentals/Additionals/SpreadOpFragments.jsx';
-// import BootstrapExample from './Components/Fundamentals/Additionals/BootstrapExample.jsx';
-// import FragmentWithKey, {FragmentWithKeyInTable} from './Components/Fundamentals/Additionals/FragmentWithKey.jsx';
 
-/*
-import Gallery from '../src/Components/Miscellaneous/Gallery.jsx'
-import UseEffectExample from './Components/Hooks/UseEffectExample.jsx';
-import LifeCycleClass from './Components/LifeCycle/LifeCycleClass.jsx';
-import LifeCycleDemo from './Components/LifeCycle/LifeCycleDemo.jsx';
+
+// Miscellaneous
+ import Profile from './Components/Miscellaneous/Props.jsx';
+ import CardProfile from './Components/Miscellaneous/PropCards.jsx';
+import Gallery from './Components/Miscellaneous/Gallery.jsx';
 import RenderProps from './Components/Miscellaneous/RenderProps.jsx';
-
-import Sort from './Components/Miscellaneous/Sort.jsx';
 import RenderPropsMainDemo from './Components/Miscellaneous/RenderPropsMainDemo.jsx';
 import RenderPropsClassMain from './Components/Miscellaneous/RenderPropsClassMain.jsx';
-import LifeCycleFunction from './Components/LifeCycle/LifeCycleFunction.jsx';
 
-// Form Manipulations
-import BiodataFormControlled from './Components/FormHandling/BiodataFormControlled.jsx';
-import BiodataFormUncontrolled from './Components/FormHandling/BiodataFormUncontrolled';
-import BiodataFormRHF from './Components/FormHandling/DynamicFieldsRHF.jsx';
-import BiodataFormRHFYepValid from './Components/FormHandling/BiodataFormRHFYepValid.jsx'
-import BiodataFormFormik from './Components/FormHandling/BiodataFormFormik.jsx'
-
-import Callback from './Components/Hooks/Callback.jsx'
-import ReactHook from './Components/Hooks/ReactHooks.jsx'
-import UseMemoExample from './Components/Hooks/UseMemoExample';
-import ParentCallback from './Components/Hooks/CallbackParent.jsx';
-
-import HOC1 from './Components/HOC/HOCProduct.jsx'
-import HOC2 from './Components/HOC/HOCUser.jsx'; 
-import HOCTodo from './Components/HOC/HOCTodo.jsx';
-
-import Events from './Components/Miscellaneous/Events.jsx';
-import PropCards from './Components/Miscellaneous/PropCards.jsx';
-import ProductaPI from './Components/DataHandling/ProductAPI.jsx';
-import MapJSON from './Components/DataHandling/MapJSON.jsx';
-
-import AddToCart from './Components/DataHandling/CartAddTo.jsx';
-import Reducer from './Components/Fundamentals/StateMgt/UsageOfReducer.jsx';
-
-import Nav from './Components/NavBar.jsx';
-*/
-
+ 
 function App() {
   return (
     <div className="App">
     <ul>
-      <a href="/">Home</a>
+      {/* <a href="/">Home</a>
       <li><a href="/classprops">Class Component Props </a>  <ClassCompProps name="Seeli" place="India"/>    </li>
       <li><a href="/functionalprops">Functional Component Props</a> <FunctionalCompProp name="Harsha" place="Covai"/> </li>
       <li><a href="/functionalparam">Functional Component with Parameter</a> <FunctionalCompParam name="Harshavardhan" country="India" /></li>
       
       <li><a href="/stateclass">State Class Component</a> <StateClass /> </li>
       <li> <a href="/statefunctional">State Functional Component</a> <StateFunctional /> </li>
-      <li><a href="/stateclassfunctional">State Class Functional Component</a> <StateClassFunctional /> </li>
-      {/* <li> <a href="/multiplestatefunction">Multiple State Functional Component</a> <MultipleStateUpdate /> </li> */}
+      <li><a href="/stateclassfunctional">State Class Functional Component</a> <StateClassFunctional /> </li> 
+      <li> <a href="/multiplestatefunction">Multiple State Functional Component</a> <MultipleStateUpdate /> </li> */}
+      
+       {/* <li> <a href="/miscelaneousprofile">Miscellaneous Profile</a> <Profile /> </li> */}
+      {/* <li> <a href="/miscelaneouspropcards">Miscellaneous Prop Cards</a> <CardProfile /> </li> */}
+      <li> <a href="/miscelaneousgallery">Miscellaneous Gallery</a> <Gallery /> </li>
+      {/* <li> <a href="/miscelaneousrenderprops">Miscellaneous Render Props</a> <RenderProps /> </li> */}
+      <li> <a href="/miscelaneousrenderpropsmaindemo">Miscellaneous Render Props Main Demo</a> <RenderPropsMainDemo /> </li>
+      <li> <a href="/miscelaneousrenderpropsclassmain">Miscellaneous Render Props Class Main</a> <RenderPropsClassMain /> </li>
+
     </ul>
-    </div> );
+    <hr/>
+    
+    
+    </div> )
 }
 export default App;
+
+//Additional Concepts
+// import Destructuring from './Components/Fundamentals/Additionals/Destructuring.jsx';
+// import FragmentsClassComp from './Components/Fundamentals/Additionals/FragmentsClassComp.jsx';
+// import FunctionalCompFragments from './Components/Fundamentals/Additionals/FragmentsFunctionalComp.jsx';
+// import InlineStyles from './Components/Fundamentals/Additionals/InlineStyles.jsx';
+// import SpreadOpFragments from './Components/Fundamentals/Additionals/SpreadOpFragments.jsx';
+// import BootstrapExample from './Components/Fundamentals/Additionals/BootstrapExample.jsx';
+// import FragmentWithKey, {FragmentWithKeyInTable} from './Components/Fundamentals/Additionals/FragmentWithKey.jsx'
+
+// import Gallery from '../src/Components/Miscellaneous/Gallery.jsx'
+//import Gallery from '../src/Components/Miscellaneous/Gallery.jsx'
+//import UseEffectExample from './Components/Hooks/UseEffectExample.jsx';
+//import LifeCycleClass from './Components/LifeCycle/LifeCycleClass.jsx';
+//import LifeCycleDemo from './Components/LifeCycle/LifeCycleDemo.jsx';
+//import RenderProps from './Components/Miscellaneous/RenderProps.jsx';
+
+//import Sort from './Components/Miscellaneous/Sort.jsx';
+//import RenderPropsMainDemo from './Components/Miscellaneous/RenderPropsMainDemo.jsx';
+//import RenderPropsClassMain from './Components/Miscellaneous/RenderPropsClassMain.jsx';
+//import LifeCycleFunction from './Components/LifeCycle/LifeCycleFunction.jsx';
+
+// Form Manipulations
+//import BiodataFormControlled from './Components/FormHandling/BiodataFormControlled.jsx';
+//import BiodataFormUncontrolled from './Components/FormHandling/BiodataFormUncontrolled';
+//import BiodataFormRHF from './Components/FormHandling/DynamicFieldsRHF.jsx';
+//import BiodataFormRHFYepValid from './Components/FormHandling/BiodataFormRHFYepValid.jsx'
+//import BiodataFormFormik from './Components/FormHandling/BiodataFormFormik.jsx'
+
+//import Callback from './Components/Hooks/Callback.jsx'
+//import ReactHook from './Components/Hooks/ReactHooks.jsx'
+//import UseMemoExample from './Components/Hooks/UseMemoExample';
+//import ParentCallback from './Components/Hooks/CallbackParent.jsx';
+
+//import HOC1 from './Components/HOC/HOCProduct.jsx'
+//import HOC2 from './Components/HOC/HOCUser.jsx'; 
+//import HOCTodo from './Components/HOC/HOCTodo.jsx';
+
+//import Events from './Components/Miscellaneous/Events.jsx';
+//import PropCards from './Components/Miscellaneous/PropCards.jsx';
+//import ProductaPI from './Components/DataHandling/ProductAPI.jsx';
+//import MapJSON from './Components/DataHandling/MapJSON.jsx';
+
+//import AddToCart from './Components/DataHandling/CartAddTo.jsx';
+//import Reducer from './Components/Fundamentals/StateMgt/UsageOfReducer.jsx';
+
+//import Nav from './Components/NavBar.jsx';
+
+
 
 
 

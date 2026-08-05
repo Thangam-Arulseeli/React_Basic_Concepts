@@ -69,8 +69,7 @@ export class StateClass1 extends Component{
     render(){
         return (
           <div>
-            <h2> State Management in Class Component </h2>
-            
+            <h2>  State Management in Class Component </h2> 
             <button onClick={this.increment}> Increase Count </button>
                  { this.state.count }   {/* String Interpolation */}
             <button onClick={this.decrement}> Decrease Count </button>
