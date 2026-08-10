@@ -10,19 +10,19 @@ Returns an object:
 
 
 Key Characteristics of useRef
-Feature	Description
-.current	Holds the value
-Mutable	Can be changed
-Re-render	❌ Does NOT trigger
-Persistent	Value retained between renders
-DOM access	✅ Yes
+Feature	      Description
+.current	    Holds the value
+Mutable   	  Can be changed
+Re-render	    ❌ Does NOT trigger
+Persistent  	Value retained between renders
+DOM access	  ✅ Yes
 
 Difference: useRef vs useState
-Feature	useRef	useState
-Triggers re-render	❌ No	✅ Yes
-Used for UI updates	❌	✅
-Used for DOM access	✅	❌
-Mutable	✅	❌ (immutable)
+Feature	                useRef	        useState
+Triggers re-render	    ❌ No	         ✅ Yes
+Used for UI updates	    ❌	No           ✅ Yes
+Used for DOM access   	✅              	❌
+Mutable	                ✅	              ❌ (immutable)
 
 ✔ No re-render
 ✔ Direct DOM manipulation
@@ -31,8 +31,7 @@ Mutable	✅	❌ (immutable)
 //Example 1: Accessing DOM Element (Focus Input)
 //📌 Use Case
 //Automatically focus an input when component loads.
-
-import React, { useRef, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function useRefExamples() {
   const inputRef = useRef(null);
@@ -41,7 +40,17 @@ function useRefExamples() {
     inputRef.current.focus();
   }, []);
 
-  return <input ref={inputRef} />;
+  return (<> 
+ 
+     <input ref={inputRef} placeholder="Focus me on load" /> 
+     <hr />
+   <UncontrolledInput /> 
+   <hr />< PreviousValue /> 
+   < Timer />
+   <hr />
+   <FileUpload />
+  </>
+  );
 }
 
 
@@ -72,7 +81,7 @@ function UncontrolledInput() {
 //✔ useRef remembers old value
 //✔ No extra renders
 
-import React, { useState, useEffect, useRef } from "react";
+
 
 function PreviousValue() {
   const [count, setCount] = useState(0);

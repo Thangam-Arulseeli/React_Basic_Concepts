@@ -59,6 +59,7 @@ export default function Gallery() {
       </span>
       <h2 className="m-5">
         <i>{course.name} </i>
+        
       </h2>
       <h3 className="ms-5">
         ({index+1} of {courseList.length})

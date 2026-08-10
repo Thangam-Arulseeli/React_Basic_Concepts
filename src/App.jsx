@@ -31,7 +31,19 @@ import RenderProps from './Components/Miscellaneous/RenderProps.jsx';
 import RenderPropsMainDemo from './Components/Miscellaneous/RenderPropsMainDemo.jsx';
 import RenderPropsClassMain from './Components/Miscellaneous/RenderPropsClassMain.jsx';
 
- 
+ // Hooks
+//  import CounterComponent from './Components/Hooks/CounterComponent.jsx';
+ import UseEffectExample from './Components/Hooks/UseEffectExample.jsx';
+ import UseMemoExample from './Components/Hooks/UseMemoExample.jsx';
+ import UseRefExamples from './Components/Hooks/useRefExamples.jsx';
+ import Callback from './Components/Hooks/Callback.jsx';
+ import ReactHook from './Components/Hooks/ReactHooks.jsx';
+
+ // LifeCycle
+import LifeCycleClass from './Components/LifeCycle/LifeCycleClass.jsx';
+import LifeCycleFunction from './Components/LifeCycle/LifeCycleFunction.jsx';
+import LifeCycleDemo from './Components/LifeCycle/LifeCycleDemo.jsx';
+
 function App() {
   return (
     <div className="App">
@@ -50,10 +62,24 @@ function App() {
       {/* <li> <a href="/miscelaneouspropcards">Miscellaneous Prop Cards</a> <CardProfile /> </li> */}
       <li> <a href="/miscelaneousgallery">Miscellaneous Gallery</a> <Gallery /> </li>
       {/* <li> <a href="/miscelaneousrenderprops">Miscellaneous Render Props</a> <RenderProps /> </li> */}
-      <li> <a href="/miscelaneousrenderpropsmaindemo">Miscellaneous Render Props Main Demo</a> <RenderPropsMainDemo /> </li>
-      <li> <a href="/miscelaneousrenderpropsclassmain">Miscellaneous Render Props Class Main</a> <RenderPropsClassMain /> </li>
+      {/* <li> <a href="/miscelaneousrenderpropsmaindemo">Miscellaneous Render Props Main Demo</a> <RenderPropsMainDemo /> </li>
+      <li> <a href="/miscelaneousrenderpropsclassmain">Miscellaneous Render Props Class Main</a> <RenderPropsClassMain /> </li> */}
 
-    </ul>
+      {/* <li> <a href="/hooksuseeffect">Hooks UseEffect Example</a> <UseEffectExample /> </li>
+       <li> <a href="/hooksusememo">Hooks UseMemo Example</a> <UseMemoExample /> </li> */}
+       
+       {/* <li> <a href="/hookcounter">Hooks UseRef Example</a> <CounterComponent /> </li> */}
+      {/* <li> <a href="/hooksuseref">Hooks UseRef Example</a> <UseRefExamples /> </li>   */}
+
+      {/* <li> <a href="/hookscallback">Hooks Callback Example</a> <Callback /> </li> */}
+     {/*  <li> <a href="/reacthooks">React Hooks Example</a> <ReactHook /> </li> */}
+      
+        
+      {/* <li> <a href="/lifecycleclass">Lifecycle Class Component</a> <LifeCycleClass /> </li>
+      <li> <a href="/lifecyclefunction">Lifecycle Function Component</a> <LifeCycleFunction /> </li> 
+      <li> <a href="/lifecycledemo">Lifecycle Demo Component</a> <LifeCycleDemo /> </li> */}  
+
+           </ul>
     <hr/>
     
     

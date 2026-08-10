@@ -23,8 +23,9 @@ When Should You Use useMemo?
 1.	Runs the function on first render
 2.	Stores the result in memory
 3.	On re-render:
-o	If dependencies unchanged → reuse cached value
 o	If dependencies changed → recompute
+o If dependencies unchanged → reuse cached value
+
 */
 
 
