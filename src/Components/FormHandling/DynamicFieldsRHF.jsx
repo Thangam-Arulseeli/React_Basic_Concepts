@@ -18,7 +18,7 @@ const { fields, append, remove } = useFieldArray({
 });
 Method	         Purpose
 fields	         Current dynamic fields
-append()  	     Add a new field
+append()  	     Add a new field at the end
 remove(index)	   Remove a field
 
 📦 Installation (if not installed)
@@ -66,7 +66,7 @@ function DynamicFieldsRHS() {
     handleSubmit,
     formState: { errors }
   } = useForm({
-    defaultValues: {
+     defaultValues: {
       skills: [{ skill: "" }]
     }
   });
@@ -89,7 +89,8 @@ function DynamicFieldsRHS() {
         <div key={field.id}>
           <input
             placeholder="Enter skill"
-            {...register(`skills.${index}.skill`, {
+            {...register(`skills.${index}.skill`, 
+              {
               required: "Skill is required"
             })}
           />

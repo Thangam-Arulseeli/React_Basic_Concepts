@@ -21,8 +21,6 @@ import StateFunctional from './Components/Fundamentals/StateMgt/StateFunctional.
  import StateClassFunctional from './Components/Fundamentals/StateMgt/StateClassFunctional.jsx';
 import MultipleStateUpdate from './Components/Fundamentals/StateMgt/MultipleStateUpdate.jsx';
 
-
-
 // Miscellaneous
  import Profile from './Components/Miscellaneous/Props.jsx';
  import CardProfile from './Components/Miscellaneous/PropCards.jsx';
@@ -44,6 +42,16 @@ import LifeCycleClass from './Components/LifeCycle/LifeCycleClass.jsx';
 import LifeCycleFunction from './Components/LifeCycle/LifeCycleFunction.jsx';
 import LifeCycleDemo from './Components/LifeCycle/LifeCycleDemo.jsx';
 
+// Form Handling
+import BiodataFormControlled from './Components/FormHandling/BiodataFormControlled.jsx';
+import BiodataFormUncontrolled from './Components/FormHandling/BiodataFormUncontrolled.jsx';
+import BiodataFormRHFYepValid from './Components/FormHandling/BiodataFormRHFYepValid.jsx';
+import BiodataFormFormik from './Components/FormHandling/BiodataFormFormik.jsx';
+import BiodataFormRHF from './Components/FormHandling/BiodataFormRHF.jsx';
+import DynamicFieldRHF from './Components/FormHandling/DynamicFieldsRHF.jsx';
+
+
+
 function App() {
   return (
     <div className="App">
@@ -60,17 +68,15 @@ function App() {
       
        {/* <li> <a href="/miscelaneousprofile">Miscellaneous Profile</a> <Profile /> </li> */}
       {/* <li> <a href="/miscelaneouspropcards">Miscellaneous Prop Cards</a> <CardProfile /> </li> */}
-      <li> <a href="/miscelaneousgallery">Miscellaneous Gallery</a> <Gallery /> </li>
+      {/* <li> <a href="/miscelaneousgallery">Miscellaneous Gallery</a> <Gallery /> </li> */}
       {/* <li> <a href="/miscelaneousrenderprops">Miscellaneous Render Props</a> <RenderProps /> </li> */}
       {/* <li> <a href="/miscelaneousrenderpropsmaindemo">Miscellaneous Render Props Main Demo</a> <RenderPropsMainDemo /> </li>
       <li> <a href="/miscelaneousrenderpropsclassmain">Miscellaneous Render Props Class Main</a> <RenderPropsClassMain /> </li> */}
 
-      {/* <li> <a href="/hooksuseeffect">Hooks UseEffect Example</a> <UseEffectExample /> </li>
-       <li> <a href="/hooksusememo">Hooks UseMemo Example</a> <UseMemoExample /> </li> */}
-       
+      {/* <li> <a href="/hooksuseeffect">Hooks UseEffect Example</a> <UseEffectExample /> </li>*/}
+      {/* <li> <a href="/hooksusememo">Hooks UseMemo Example</a> <UseMemoExample /> </li> */}    
        {/* <li> <a href="/hookcounter">Hooks UseRef Example</a> <CounterComponent /> </li> */}
       {/* <li> <a href="/hooksuseref">Hooks UseRef Example</a> <UseRefExamples /> </li>   */}
-
       {/* <li> <a href="/hookscallback">Hooks Callback Example</a> <Callback /> </li> */}
      {/*  <li> <a href="/reacthooks">React Hooks Example</a> <ReactHook /> </li> */}
       
@@ -79,7 +85,16 @@ function App() {
       <li> <a href="/lifecyclefunction">Lifecycle Function Component</a> <LifeCycleFunction /> </li> 
       <li> <a href="/lifecycledemo">Lifecycle Demo Component</a> <LifeCycleDemo /> </li> */}  
 
-           </ul>
+
+      {/* <li> <a href="/formcontrolled">Form Controlled Component</a> <BiodataFormControlled /> </li> */}
+      {/* <li> <a href="/formuncontrolled">Form Uncontrolled Component</a> <BiodataFormUncontrolled /> </li>  */}
+       {/* <li> <a href="/formformik">Form Formik Component</a> <BiodataFormFormik /> </li> */}
+          <li> <a href="/formrhf">Form React Hook Form Component</a> <BiodataFormRHF /> </li>
+          <hr></hr>
+              <li> <a href="/formrhfyepvalid">Form React Hook Form Yep Valid Component</a> <BiodataFormRHFYepValid /> </li> 
+         <hr></hr>
+         <li> <a href="/dynamicfieldrhf">Dynamic Fields React Hook Form Component</a> <DynamicFieldRHF /> </li>  
+          </ul>
     <hr/>
     
     

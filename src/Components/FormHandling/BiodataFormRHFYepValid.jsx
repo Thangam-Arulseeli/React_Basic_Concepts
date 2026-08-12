@@ -146,8 +146,8 @@ function BiodataFormRHFYepValid() {
       City:
       <select {...register("city")}>
         <option value="">Select</option>
-        <option>Chennai</option>
-        <option>Coimbatore</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Coimbatore">Coimbatore</option>
       </select>
       <p>{errors.city?.message}</p>
 

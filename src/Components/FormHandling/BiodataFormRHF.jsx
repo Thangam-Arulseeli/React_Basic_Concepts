@@ -75,8 +75,8 @@ function BiodataFormRHF() {
       City:
       <select {...register("city", { required: "Select city" })}>
         <option value="">Select</option>
-        <option>Chennai</option>
-        <option>Coimbatore</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Coimbatore">Coimbatore</option>
       </select>
       {errors.city && errors.city.message}
       <br />

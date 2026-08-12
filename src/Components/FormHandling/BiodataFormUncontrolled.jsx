@@ -26,7 +26,7 @@ Legacy / third-party integrations
 How Validation Works:
 --------------------
 User clicks Submit
-Values read using ref.current.value
+Values read using "ref.current.value"
 Validation logic runs manually
 Errors stored in a small state object
 Errors displayed below fields
