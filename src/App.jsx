@@ -50,7 +50,17 @@ import BiodataFormFormik from './Components/FormHandling/BiodataFormFormik.jsx';
 import BiodataFormRHF from './Components/FormHandling/BiodataFormRHF.jsx';
 import DynamicFieldRHF from './Components/FormHandling/DynamicFieldsRHF.jsx';
 
+// API Handling - AXIOS
+import UsingFetch from './Components/DataHandling/ProductAPI.jsx';
+import UserToggle from './Components/DataHandling/MapJSON.jsx';
+import PersonList from './Components/DataHandling/Axios.jsx';
+import AddToCart from './Components/DataHandling/CartAddTo.jsx';
+import Reducer from './Components/Fundamentals/StateMgt/UsageOfReducer.jsx';
 
+
+// PropDrilling
+import ClassApp from './Components/Fundamentals/PropsDrilling/ClassBased/ClassApp.jsx';
+// import FunctionalApp from './Components/Fundamentals/PropsDrilling/FunctionalBased/FunctionalApp.jsx';
 
 function App() {
   return (
@@ -89,15 +99,24 @@ function App() {
       {/* <li> <a href="/formcontrolled">Form Controlled Component</a> <BiodataFormControlled /> </li> */}
       {/* <li> <a href="/formuncontrolled">Form Uncontrolled Component</a> <BiodataFormUncontrolled /> </li>  */}
        {/* <li> <a href="/formformik">Form Formik Component</a> <BiodataFormFormik /> </li> */}
-          <li> <a href="/formrhf">Form React Hook Form Component</a> <BiodataFormRHF /> </li>
+          {/* <li> <a href="/formrhf">Form React Hook Form Component</a> <BiodataFormRHF /> </li>
           <hr></hr>
               <li> <a href="/formrhfyepvalid">Form React Hook Form Yep Valid Component</a> <BiodataFormRHFYepValid /> </li> 
          <hr></hr>
          <li> <a href="/dynamicfieldrhf">Dynamic Fields React Hook Form Component</a> <DynamicFieldRHF /> </li>  
-          </ul>
-    <hr/>
+          
+    <hr/> */}
+
+        {/* <li> <a href="/productapi">Product API Component - Fake API </a> <UsingFetch /> </li>  */}
+        <li> <a href="/mapjson">Map JSON Component</a> <UserToggle /> </li> 
+        {/* <li> <a href="/axios">Axios Component</a> <PersonList /> </li> */}
+      {/* <li> <a href="/addtocart">Add to Cart Component</a> <AddToCart /> </li> */}
+       {/* <li> <a href="/reducer">Reducer Component</a> <Reducer /> </li> */}
+
+
+        {/* <li> <a href="/classapp">Class Based Props Drilling</a> <ClassApp /> </li> */}
     
-    
+    </ul>
     </div> )
 }
 export default App;

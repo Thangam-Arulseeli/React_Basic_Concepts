@@ -159,7 +159,7 @@ function AxiosuseAxios() {
       <h1>useAxios DEMO</h1>
       <h1 className="head"> PRODUCT DETAILS </h1>
       <div className="col md-3">
-        <h1 className="head">Employees list</h1>
+        <h1 className="head">Product list</h1>
         <div className="row">
           {data.map((record) => (
             <div

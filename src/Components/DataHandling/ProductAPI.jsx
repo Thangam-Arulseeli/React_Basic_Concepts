@@ -32,7 +32,7 @@ const UsingFetch = () => {
         <div className="row">
           {products.map((product) => (
             // map - key property is mandatory
-            <div className="col-md-3" key={product.id}  style={{border:'inset',width:150,borderRadius:10,marginLeft:50,marginBottom:30}}>
+            <div className="col-md-12" key={product.id}  style={{border:'inset',width:150,borderRadius:10,marginLeft:50,marginBottom:30}}>
               <div className="card" style={{border:'none',marginTop:10}}>
                 <div className="card-head">
                   <img

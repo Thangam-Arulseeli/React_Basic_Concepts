@@ -2,13 +2,15 @@ import React, { useState, useEffect } from "react";
 
 // json-server --watch src\data\users.json --port 3001   ------ To run JSON Server in port 3001
 function UserToggle() {
+  const API_URL = process.env.base_url+"/users"; 
   const [users, setUsers] = useState([]);
   const [selectedUser, setSelectedUser] = useState(null);
 
   useEffect(() => {
     // fetch("https://react-json-adh9g641b-pallavikatari.vercel.app/users")
-    fetch("http://localhost:3001/users")  
-    .then((response) => response.json())
+    // fetch("http://localhost:3001/users")  
+    fetch(API_URL)
+      .then((response) => response.json())
       .then((data) => setUsers(data));
     //   console.log(data)
   }, []);
@@ -74,10 +76,10 @@ function UserFilter() {
 
   return (
     <div>
-      <h2>User List - Filter by Name</h2>
+      <h2>User List - Filter by Name -- First component </h2>
       <div className="row">
         {users
-          .filter((user) => user.name.includes("D"))
+          .filter((user) => user.name.includes("D")) // Static Filter - Filter by Name which includes "D" in the name
           .map((user) => (
             <div
               className="col col-md-3"
@@ -107,7 +109,7 @@ function UserFilter1() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    //fetch("https://react-jsonserver-vercel-n8udx7yob-pallavikatari.vercel.app/users")
+    //fetch("https://react-jsonserver-vercel-n8udx7yob-thangamarulseeli.vercel.app/users")
     fetch("http://localhost:3001/users")
       .then((response) => response.json())
       .then((data) => setUsers(data));
@@ -119,7 +121,7 @@ function UserFilter1() {
       <h2>User List - Filter by Age</h2>
       <div className="row">
         {users
-          .filter((user) => user.age > 30)
+          .filter((user) => user.age > 30) // Static Filter - Filter by Age greater than 30
           .map((user) => (
             <div
               className="col col-md-3"
@@ -150,7 +152,7 @@ function UserSearch() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    // fetch("https://react-jsonserver-vercel-n8udx7yob-pallavikatari.vercel.app/users")
+    // fetch("https://react-jsonserver-vercel-n8udx7yob-thangamarulseeli.vercel.app/users")
     fetch("http://localhost:3001/users")
       .then((response) => response.json())
       .then((data) => setUsers(data));
