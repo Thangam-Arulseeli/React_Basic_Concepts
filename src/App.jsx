@@ -56,11 +56,16 @@ import UserToggle from './Components/DataHandling/MapJSON.jsx';
 import PersonList from './Components/DataHandling/Axios.jsx';
 import AddToCart from './Components/DataHandling/CartAddTo.jsx';
 import Reducer from './Components/Fundamentals/StateMgt/UsageOfReducer.jsx';
+import Counter from './Components/Fundamentals/StateMgt/ReducerBasedCounter.jsx';
 
 
 // PropDrilling
 import ClassApp from './Components/Fundamentals/PropsDrilling/ClassBased/ClassApp.jsx';
+import ClassAppProvider from './Components/Fundamentals/PropsDrilling/ClassBased/ClassAppProvider.jsx';
 // import FunctionalApp from './Components/Fundamentals/PropsDrilling/FunctionalBased/FunctionalApp.jsx';
+
+import Nav from './Components/NavBar.jsx';
+
 
 function App() {
   return (
@@ -108,14 +113,20 @@ function App() {
     <hr/> */}
 
         {/* <li> <a href="/productapi">Product API Component - Fake API </a> <UsingFetch /> </li>  */}
-        <li> <a href="/mapjson">Map JSON Component</a> <UserToggle /> </li> 
+        {/* <li> <a href="/mapjson">Map JSON Component</a> <UserToggle /> </li>  */}
         {/* <li> <a href="/axios">Axios Component</a> <PersonList /> </li> */}
       {/* <li> <a href="/addtocart">Add to Cart Component</a> <AddToCart /> </li> */}
        {/* <li> <a href="/reducer">Reducer Component</a> <Reducer /> </li> */}
 
 
-        {/* <li> <a href="/classapp">Class Based Props Drilling</a> <ClassApp /> </li> */}
+         {/* <li> <a href="/classapp">Class Based Props Drilling</a> <ClassApp /> </li>  */}
+         {/* <li> <a href="/classappprovider">Class Based Context API</a> <ClassAppProvider /> </li>  */}
+
+       <li> <a href="/reducercounter">Reducer Based Counter</a> <Counter /> </li>
     
+
+    {/* <a href="/navbar">Nav Bar <Nav /> </a> */}
+
     </ul>
     </div> )
 }

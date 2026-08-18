@@ -3,11 +3,11 @@ import Child from "./Child";
 
 class Parent extends Component {
   render() {
-    const newLocal = <Child userName={this.props.userName} />;
+    // const newLocal = <Child userName={this.props.userName} />; 
     return (
       <div>
-       {/* {newLocal} */}
-         <Child />  
+       {/* {newLocal}  */}
+          <Child /> 
       </div>
     );
   }

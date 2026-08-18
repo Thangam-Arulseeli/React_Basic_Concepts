@@ -129,6 +129,8 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { useCart } from "react-use-cart";
+import Home from "./Fundamentals/Home.jsx";
+
 
 export default function Nav() {
   //Cart totalUniqueItems in Cart
@@ -145,7 +147,7 @@ export default function Nav() {
               <li>
                 {/* <a href="home"></a> */}
                 <Link className="vlink rounded border-0" to="">
-                  <FontAwesomeIcon icon={faHome} /> <span>Home</span>
+                  <FontAwesomeIcon icon={faHome} /> <Home /> <span>Home</span>
                 </Link>
               </li>
               <li>
