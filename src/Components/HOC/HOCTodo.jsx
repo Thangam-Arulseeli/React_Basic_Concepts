@@ -11,5 +11,6 @@ const TodoList = ({ data }) => {
   return <div>{todos}<hr /><SearchUsers /><hr/><SearchProducts/></div>
 }
 const TodosItems = Hoc(TodoList, 'todos')
-export default TodosItems
+
+export default TodosItems;   //// Main component which is exported to App.jsx and rendered in the browser.
 

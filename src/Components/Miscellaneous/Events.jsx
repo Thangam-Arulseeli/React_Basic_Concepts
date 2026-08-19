@@ -69,7 +69,6 @@ function ClickExample() {
 }
 
 //Use event.preventDefault() to Prevent Default Browser Behavior
-
 function FormExample() {
     const handleSubmit = (event) => {
         event.preventDefault();  // Prevents the default functionality of that particular element -- Refreshing the page
@@ -90,10 +89,9 @@ function FormExample() {
 }
 
 //Use event.stopPropagation() to Stop Event Bubbling
-
 function ButtonExample() {
     const handleClick = (e) => {
-        e.stopPropagation();   // Stops EVENT BUBBLING 
+       e.stopPropagation();   // Stops EVENT BUBBLING 
       // When we didn't use  e.stopPropagation(); statement, when the child that is Button is clicked,  
       // both Button and Div click events will be triggered. 
       // This is called as EVENT BUBBLING // 

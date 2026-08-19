@@ -11,7 +11,29 @@ export function useTime(){
  return time;
 }
 
-// Theme using useState
+// Applying the theme to the current time
+// Clock - Child Component, returning time
+function Clock({ color, time}){
+    return <h1 style={{ color:color}}>{time}</h1>
+}
+
+// Avatar 
+function Avatar(){
+    const avatar= "https://cdn-icons-png.flaticon.com/128/1326/1326377.png";
+    const description = "Manik Jakim";
+    return(
+        <img 
+        className="avatar"
+        src={avatar}
+        alt={description}
+        width={50}
+        height={50}
+        style={{ borderRadius: 30}} >
+        </img>
+    ) ;
+}
+
+// Theme using useState -- Main Component
 export default function Theme() {
     const time = useTime();
     // Initial Color setting by useState hook
@@ -32,28 +54,5 @@ export default function Theme() {
          <Clock color={color} time={time.toLocaleTimeString()} />
        </div>
     );
-}
-
-// Applying the theme to the current time
-// Clock - Child Component, retyrning time
-function Clock({ color, time}){
-    return <h1 style={{ color:color}}>{time}</h1>
-}
-
-
-// Avatar
-function Avatar(){
-    const avatar= "https://cdn-icons-png.flaticon.com/128/1326/1326377.png";
-    const description = "Manik Jakim";
-    return(
-        <img 
-        className="avatar"
-        src={avatar}
-        alt={description}
-        width={50}
-        height={50}
-        style={{ borderRadius: 30}} >
-        </img>
-    ) ;
 }
 

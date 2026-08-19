@@ -28,6 +28,8 @@ import Gallery from './Components/Miscellaneous/Gallery.jsx';
 import RenderProps from './Components/Miscellaneous/RenderProps.jsx';
 import RenderPropsMainDemo from './Components/Miscellaneous/RenderPropsMainDemo.jsx';
 import RenderPropsClassMain from './Components/Miscellaneous/RenderPropsClassMain.jsx';
+import Sort from './Components/Miscellaneous/Sort.jsx'; // Sort component for sorting functionality uses Events and Props Drilling concepts
+import Theme from './Components/Miscellaneous/Theme.jsx';
 
  // Hooks
 //  import CounterComponent from './Components/Hooks/CounterComponent.jsx';
@@ -41,6 +43,10 @@ import RenderPropsClassMain from './Components/Miscellaneous/RenderPropsClassMai
 import LifeCycleClass from './Components/LifeCycle/LifeCycleClass.jsx';
 import LifeCycleFunction from './Components/LifeCycle/LifeCycleFunction.jsx';
 import LifeCycleDemo from './Components/LifeCycle/LifeCycleDemo.jsx';
+
+
+// HOC - Higher Order Components
+import HOCTodo from './Components/HOC/HOCTodo.jsx';
 
 // Form Handling
 import BiodataFormControlled from './Components/FormHandling/BiodataFormControlled.jsx';
@@ -85,8 +91,13 @@ function App() {
       {/* <li> <a href="/miscelaneouspropcards">Miscellaneous Prop Cards</a> <CardProfile /> </li> */}
       {/* <li> <a href="/miscelaneousgallery">Miscellaneous Gallery</a> <Gallery /> </li> */}
       {/* <li> <a href="/miscelaneousrenderprops">Miscellaneous Render Props</a> <RenderProps /> </li> */}
-      {/* <li> <a href="/miscelaneousrenderpropsmaindemo">Miscellaneous Render Props Main Demo</a> <RenderPropsMainDemo /> </li>
-      <li> <a href="/miscelaneousrenderpropsclassmain">Miscellaneous Render Props Class Main</a> <RenderPropsClassMain /> </li> */}
+      {/* <li> <a href="/miscelaneousrenderpropsmaindemo">Miscellaneous Render Props Main Demo</a> <RenderPropsMainDemo /> </li>*/}
+       {/*<li> <a href="/miscelaneousrenderpropsclassmain">Miscellaneous Render Props Class Main</a> <RenderPropsClassMain /> </li> */}
+        <li> <a href="/miscelaneoustheme">Miscellaneous Theme</a> <Theme /> </li>
+       <li> <a href="/miscelaneoussort">Miscellaneous Sort</a> <Sort /> </li> 
+
+        {/* <li> <a href="/hoc">HOC - Higher Order Component</a> <HOCTodo /> </li> */}
+      
 
       {/* <li> <a href="/hooksuseeffect">Hooks UseEffect Example</a> <UseEffectExample /> </li>*/}
       {/* <li> <a href="/hooksusememo">Hooks UseMemo Example</a> <UseMemoExample /> </li> */}    
@@ -122,7 +133,7 @@ function App() {
          {/* <li> <a href="/classapp">Class Based Props Drilling</a> <ClassApp /> </li>  */}
          {/* <li> <a href="/classappprovider">Class Based Context API</a> <ClassAppProvider /> </li>  */}
 
-       <li> <a href="/reducercounter">Reducer Based Counter</a> <Counter /> </li>
+       {/* <li> <a href="/reducercounter">Reducer Based Counter</a> <Counter /> </li> */}
     
 
     {/* <a href="/navbar">Nav Bar <Nav /> </a> */}
