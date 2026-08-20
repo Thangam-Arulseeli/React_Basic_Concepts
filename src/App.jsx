@@ -93,10 +93,10 @@ function App() {
       {/* <li> <a href="/miscelaneousrenderprops">Miscellaneous Render Props</a> <RenderProps /> </li> */}
       {/* <li> <a href="/miscelaneousrenderpropsmaindemo">Miscellaneous Render Props Main Demo</a> <RenderPropsMainDemo /> </li>*/}
        {/*<li> <a href="/miscelaneousrenderpropsclassmain">Miscellaneous Render Props Class Main</a> <RenderPropsClassMain /> </li> */}
-        <li> <a href="/miscelaneoustheme">Miscellaneous Theme</a> <Theme /> </li>
-       <li> <a href="/miscelaneoussort">Miscellaneous Sort</a> <Sort /> </li> 
+        {/* <li> <a href="/miscelaneoustheme">Miscellaneous Theme</a> <Theme /> </li>
+       <li> <a href="/miscelaneoussort">Miscellaneous Sort</a> <Sort /> </li>  */}
 
-        {/* <li> <a href="/hoc">HOC - Higher Order Component</a> <HOCTodo /> </li> */}
+        <li> <a href="/hoc">HOC - Higher Order Component</a> <HOCTodo /> </li>
       
 
       {/* <li> <a href="/hooksuseeffect">Hooks UseEffect Example</a> <UseEffectExample /> </li>*/}
